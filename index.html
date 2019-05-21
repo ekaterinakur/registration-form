@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,
+          user-scalable=no,
+          initial-scale=1.0,
+          maximum-scale=1.0,
+          minimum-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <form action="">
+      <label for="fullname">Enter your full name:</label>
+      <input type="text" name="fullname" id="fullname" placeholder="Full name" autocomplete="off">
+      <div class="error display-none">Please, enter your full name</div>
+
+      <div class="hide-info">
+        <input type="checkbox" id="hide-info" name="hide-info" value="hide-info">
+        <label for="hide-info">I would prefer not to specify my phone number and home town</label>
+      </div>
+
+      <div id="wide-info" class="wide-info">
+        <label for="phone">Enter your phone number:</label>
+        <input type="tel" name="phone" id="phone" placeholder="Phone number" autocomplete="off">
+        <div class="error display-none">Please, enter correct phone number</div>
+
+        <label for="region">Select your region:</label>
+        <select name="region" id="region">
+          <option value="" selected disabled></option>
+          <option value="Kyiv">Kyiv</option>
+          <option value="Center">Center</option>
+          <option value="North">North</option>
+          <option value="East">East</option>
+          <option value="South">South</option>
+          <option value="West">West</option>
+        </select>
+
+        <label for="city" class="display-none">Select your city:</label>
+        <select name="city" class="display-none">
+          <option value="" selected disabled></option>
+          <option value="Cherkasy" data-region="center" class="display-none">Cherkasy</option>
+          <option value="Dnipro" data-region="center" class="display-none">Dnipro</option>
+          <option value="Kropyvnytskyi" data-region="center" class="display-none">Kropyvnytskyi</option>
+          <option value="Poltava" data-region="center" class="display-none">Poltava</option>
+          <option value="Vinnytsia" data-region="center" class="display-none">Vinnytsia</option>
+          <option value="Zhytomyr" data-region="center" class="display-none">Zhytomyr</option>
+          <option value="Chernihiv" data-region="north" class="display-none">Chernihiv</option>
+          <option value="Sumy" data-region="north" class="display-none">Sumy</option>
+          <option value="Donetsk" data-region="east" class="display-none">Donetsk</option>
+          <option value="Kharkiv" data-region="east" class="display-none">Kharkiv</option>
+          <option value="Luhansk" data-region="east" class="display-none">Luhansk</option>
+          <option value="Kherson" data-region="south" class="display-none">Kherson</option>
+          <option value="Mykolaiv" data-region="south" class="display-none">Mykolaiv</option>
+          <option value="Odesa" data-region="south" class="display-none">Odesa</option>
+          <option value="Zaporizhzhia" data-region="south" class="display-none">Zaporizhzhia</option>
+          <option value="Chernivtsi" data-region="west" class="display-none">Chernivtsi</option>
+          <option value="Ivano-Frankivsk" data-region="west" class="display-none">Ivano-Frankivsk</option>
+          <option value="Khmelnytskyi" data-region="west" class="display-none">Khmelnytskyi</option>
+          <option value="Lutsk" data-region="west" class="display-none">Lutsk</option>
+          <option value="Lviv" data-region="west" class="display-none">Lviv</option>
+          <option value="Rivne" data-region="west" class="display-none">Rivne</option>
+          <option value="Ternopil" data-region="west" class="display-none">Ternopil</option>
+          <option value="Uzhhorod" data-region="west" class="display-none">Uzhhorod</option>
+          <option value="other">Not in the list</option>
+        </select>
+      </div>
+
+      <input type="submit" disabled value="Submit">
+    </form>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>

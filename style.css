@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+form {
+    margin: 100px auto 0;
+    padding: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+}
+
+input,
+select {
+    margin: 10px 0 20px;
+    padding: 5px;
+    outline: none;
+    border-radius: 2px;
+    border: 1px solid black;
+}
+
+.hide-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.hide-info input {
+    margin-right: 10px;
+}
+
+.error {
+    color: red;
+    margin: -10px 0 20px;
+}
+
+.wide-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.valid {
+    background: rgb(93, 243, 93);
+}
+
+.not-valid {
+    background: rgb(240, 90, 90);
+}
+
+.display-none {
+    display: none;
+}
