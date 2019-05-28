@@ -35,6 +35,7 @@ function checkPhoneAndName(e) {
     e.target.classList.add('valid');
     e.target.nextElementSibling.classList.add('display-none');
   } else {
+    e.target.classList.remove('valid');
     e.target.classList.add('not-valid');
   }
 }
@@ -76,6 +77,7 @@ form.addEventListener('input', checkForm);
 function checkForm() {
   const checkFullName = fullname.classList.contains('valid');
   const checkPhone = phone.classList.contains('valid');
+  submit.setAttribute('disabled', 'disabled');
 
   if (checkFullName) {
     if (hideInfo.checked) {
@@ -84,8 +86,6 @@ function checkForm() {
       submit.removeAttribute('disabled');
     } else if (checkPhone && selectRegions.selectedIndex > 1 && selectCities.selectedIndex > 0) {
       submit.removeAttribute('disabled');
-    } else {
-      submit.setAttribute('disabled', 'disabled');
     }
   }
 }
