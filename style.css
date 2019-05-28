@@ -10,6 +10,8 @@ form {
     display: flex;
     flex-direction: column;
     border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 3px 3px 8px 0px rgba(201,191,201,1);
 }
 
 input,
@@ -17,8 +19,12 @@ select {
     margin: 10px 0 20px;
     padding: 5px;
     outline: none;
-    border-radius: 2px;
+    border-radius: 3px;
     border: 1px solid black;
+}
+
+select[name="city"] {
+    width: 100%;
 }
 
 .hide-info {
